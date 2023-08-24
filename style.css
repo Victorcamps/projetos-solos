@@ -1,1 +1,54 @@
 @charset "UTF-8"; 
+
+@font-face {
+    font-family: 'parisienne';
+    src: url(Parisienne-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+:root{
+    --sea-green: #1a936fff;
+    --black-olive: #353831ff;
+    --vermelho: #BF211E;
+    --tan: #e2c290ff;
+    --indigo: #470063ff;
+
+    --fonteTitulo: 'parisienne', cursive, sans-serif;
+    --fonteNormal: Arial,Verdana, Helvetica, serif; 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: var(--tan);
+}
+
+header{
+    text-align: center;
+    font-family: var(--fonteTitulo);
+    font-size: 3em;
+    scroll-behavior: smooth;
+    margin: 10px;
+}
+
+nav{
+   text-align: center; 
+   margin: 10px;
+}
+
+nav > a{
+    margin: 30px;
+    padding: 20px;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    color: var(--indigo);
+}
+
+nav > a:hover{
+    background-color: var(--indigo);
+    color: white;
+    border-radius: 50px;
+}
